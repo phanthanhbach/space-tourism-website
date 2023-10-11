@@ -1,0 +1,76 @@
+body {
+    background-image: url('assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-image: url('assets/home/background-home-tablet.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-image: url('assets/home/background-home-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0 0 55px;
+        height: 6rem;
+    }
+
+    .top-navigation .container {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    .top-nav-main {
+        display: flex;
+        margin-left: auto;
+        width: max-content;
+        background: rgba(255, 255, 255, 0.04);
+        -webkit-backdrop-filter: blur(40.7742px);
+        backdrop-filter: blur(40.7742px);
+        padding: 20px 50px;
+        height: inherit;
+    }
+
+    .top-nav-main .list {
+        color: inherit;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    .top-nav-main > .list > div {
+        display: flex;
+        gap: 0.6875rem;
+        height:  inherit;
+        font-size: 1rem;
+    }
+
+    .top-nav-main > .list > div:hover {
+        opacity: 0.5;
+    }
+}
