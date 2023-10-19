@@ -13,6 +13,10 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
+    html {
+        overflow: hidden;
+    }
+
     body {
         background-image: url('assets/home/background-home-desktop.jpg');
         background-repeat: no-repeat;
@@ -35,6 +39,8 @@ body {
         align-items: center;
         padding: 40px 0 0 55px;
         height: 6rem;
+        flex-shrink: 1;
+       
     }
 
     .top-navigation .container {
@@ -51,7 +57,8 @@ body {
         background: rgba(255, 255, 255, 0.04);
         -webkit-backdrop-filter: blur(40.7742px);
         backdrop-filter: blur(40.7742px);
-        padding: 20px 50px;
+        padding: 40px 60px;
+        padding-right: 140px;
         height: inherit;
     }
 
@@ -63,14 +70,71 @@ body {
         padding: 0 40px;
     }
 
-    .top-nav-main > .list > div {
-        display: flex;
+    .top-nav-main>.list>div {
+        display: absolute;
         gap: 0.6875rem;
-        height:  inherit;
+        height: inherit;
         font-size: 1rem;
     }
 
-    .top-nav-main > .list > div:hover {
+    .top-nav-main>.list>div:hover {
         opacity: 0.5;
     }
+
+    #horizontal-line {
+        max-width: calc(100% - 68%);
+        height: 1px;
+        opacity: 0.2515;
+        background: #FFF;
+        margin-left: 15%;
+        position: absolute;
+        z-index: 1;
+        flex-wrap: wrap;
+    }
+
+    main {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 165px 0 165px;
+        box-sizing: border-box;
+        margin-top: 100px;
+    }
+
+    .content-left {
+        color: #D0D6F9;
+        width: 28.125rem;
+    }
+
+    .content-left>h5 {
+        font-size: 28px;
+        letter-spacing: 4.72px;
+        font-weight: 400;
+    }
+
+    .content-left>h1 {
+        font-family: 'Bellefair', serif;
+        font-size: 150px;
+        font-weight: 300;
+        color: #fff;
+        margin: 0;
+    }
+
+    .content-left>.bottom {
+        font-size: 18px;
+        line-height: 32px;
+        font-family: 'Barlow', serif;
+    }
+
+    .content-right {
+        width: 17.125rem;
+        height: 17.125rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        color: #0B0D17;
+    }
+
 }
