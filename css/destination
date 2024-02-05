@@ -1,0 +1,7 @@
+.destination-title {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.destination-title span {
+    margin-right: 20px;
+}
