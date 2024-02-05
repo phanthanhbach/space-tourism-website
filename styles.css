@@ -82,14 +82,13 @@ body {
     }
 
     #horizontal-line {
-        max-width: calc(100% - 68%);
+        width: 32%;
         height: 1px;
         opacity: 0.2515;
         background: #FFF;
         margin-left: 15%;
         position: absolute;
         z-index: 1;
-        flex-wrap: wrap;
     }
 
     main {
