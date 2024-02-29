@@ -187,7 +187,8 @@ body {
         font-size: 100px;
         text-align: left;
         font-weight: 500;
-        margin-top: 5vh;
+        margin-top: 4vh;
+        margin-bottom: 2vh;
     }
     .moon-desc {
         color: #d0d6f9;
@@ -195,6 +196,19 @@ body {
         font-size: 18px;
     }
     .line {
-        border-top: 1px solid white;
         margin-top: 54px;
+    }
+    
+    .bottom-section {
+        display:inline-flex;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    .distance {
+        margin-right: 60px;
+    }
+    .dis-value,
+    .time-value {
+        font-family: "Bellefair", serif;
+        font-size: 28px;
     }
