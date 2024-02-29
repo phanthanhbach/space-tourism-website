@@ -14,6 +14,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
         rel="stylesheet">
     <title>Frontend Mentor | Space tourism website</title>
+
+    <style>
+        @media only screen and (min-width: 375px) {
+            body {
+                background: url("/assets/destination/background-destination-mobile.jpg");
+                background-size: cover;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            body {
+                background: url("/assets/destination/background-destination-tablet.jpg");
+                background-size: cover;
+            }
+        }
+
+        @media only screen and (min-width: 1280px) {
+            body {
+                background: url("/assets/destination/background-destination-desktop.jpg");
+                background-size: cover;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -52,10 +75,25 @@
 
     <main class="destination-page">
         <div class="container">
-            <h5 class="destination-title"><span style="color:rgb(158, 158, 158)">01</span>PICK YOUR DESTINATON</h5>
+            <h5 class="destination-title"><span>01</span>PICK YOUR DESTINATON</h5>
             <div class="planetholder">
                 <img class="planet" id="planet" src="assets/destination/image-moon.webp" alt="moon">
             </div>
+        </div>
+        <div class="planet-desc">
+            <div class="planet-navbar">
+                <ul>
+                    <li class="moon-btn" id="moon-btn">MOON</li>
+                    <li id="mars-btn">MARS</li>
+                    <li id="europa-btn">EUROPA</li>
+                    <li id="titan-btn">TITAN</li>
+                </ul>
+            </div>
+            <h2 class="moon-name" id="moon-name">MOON</h2>
+            <p class="moon-desc" id="moon-desc">See our planet as you’ve never seen it before. A perfect relaxing trip
+                away to help regain perspective and come back refreshed. While you’re there, take in some history by
+                visiting the Luna 2 and Apollo 11 landing sites.</p>
+            <hr class="line">
         </div>
 
     </main>
