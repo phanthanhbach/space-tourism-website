@@ -13,6 +13,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
     rel="stylesheet">
   <title>Frontend Mentor | Space tourism website</title>
+
+  <style>
+    @media only screen and (min-width:375px) {
+      body {
+        background: url("/assets/home/background-home-mobile.jpg");
+        background-size: cover;
+      }
+    }
+
+    @media only screen and (min-width:768px) {
+      body {
+        background: url("/assets/home/background-home-tablet.jpg");
+        background-size: cover;
+      }
+    }
+
+    @media only screen and (min-width:1280px) {
+      body {
+        background: url("/assets/home/background-home-desktop.jpg");
+        background-size: cover;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -49,7 +72,7 @@
     </div>
   </nav>
 
-  <main>
+  <main class="home-page">
     <article class="content-left">
       <h5>SO, YOU WANT TO TRAVEL TO</h5>
       <h1>SPACE</h1>
@@ -62,7 +85,7 @@
 
     <a href="destination.html">
       <div class="content-right">
-        <h3>EXPLORE</h3>
+        <p>EXPLORE</p>
       </div>
     </a>
 
